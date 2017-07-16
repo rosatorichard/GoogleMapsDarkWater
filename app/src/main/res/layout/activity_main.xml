@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/start_screen_two"
+    tools:context="com.batchmates.android.darkwaters.view.MainActivity">
+
+
+    <Button
+        android:onClick="startYourAdventure"
+        android:background="@drawable/wood_floor_dark"
+        android:layout_gravity="bottom"
+        android:text="Start your adventure"
+        android:textSize="30sp"
+        android:padding="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="50sp" />
+
+</LinearLayout>
