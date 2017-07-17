@@ -47,15 +47,9 @@ public class DisplayActivity extends AppCompatActivity implements ThirdActivityC
         int price3=getIntent().getIntExtra("price",0);
         price.setText(String.valueOf(price3));
         float stars=getIntent().getFloatExtra("stars",0);
-        if(stars<1)
-        {
-            Glide.with(this).load("https://www.7boats.com/academy/wp-content/uploads/2017/02/Review-Stars.png").into(placeStars);
 
-        }
-        else
-        {
+        presenter.choseStars(placeStars,stars);
 
-        }
         Log.d(TAG, "onCreate: "+price3+" "+stars);
 
 

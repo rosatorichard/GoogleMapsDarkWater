@@ -22,6 +22,7 @@ public interface ThirdActivityContract {
     interface Presenter extends BasePresenter<ThirdActivityContract.View>
     {
         void setUpDisplay(ImageView imageView, TextView name, TextView address, TextView phone, TextView price, ImageView stars);
+        void choseStars(ImageView imageView, float stars);
     }
 
 
